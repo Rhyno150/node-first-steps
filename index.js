@@ -94,7 +94,7 @@ import chalk from 'chalk';
 //import the greet module that is in the current folder
 import greet from './greet.js'
 
-const styledMessage = chalk.bgGreen.black(greet('Xola'));
+const styledMessage = chalk.bgRed.black(greet('Xola'));
 console.log(styledMessage)
 
 // Figlet
@@ -111,15 +111,15 @@ figlet("Hello World!!", function (err, data) {
     console.dir(err);
     return;
   }
-  console.log(data);
+ // console.log(data);
+  console.log(chalk.bgRed.whiteBright(data));
 });
 
 // TEXT
-
 figlet.text(
-    "Boo!",
+    "Boom Boom Paw!",
     {
-      font: "Ghost",
+      font: "Invita",
       horizontalLayout: "default",
       verticalLayout: "default",
       width: 80,
@@ -139,8 +139,8 @@ figlet.text(
 
 
 console.log(
-    figlet.textSync("Boo!", {
-      font: "Ghost",
+    figlet.textSync("Luvuyo!", {
+      font: "Invita",
       horizontalLayout: "default",
       verticalLayout: "default",
       width: 80,
