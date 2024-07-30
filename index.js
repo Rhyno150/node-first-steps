@@ -140,7 +140,7 @@ figlet.text(
 
 console.log(
     figlet.textSync("Luvuyo!", {
-      font: "Invita",
+      font: "Ghost",
       horizontalLayout: "default",
       verticalLayout: "default",
       width: 80,
