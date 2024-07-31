@@ -28,10 +28,20 @@
 
 //  // required "cowsay"
 
-//  const  cowMessage = cowsay.say({
-//     text: "Hello, World!"
-//  })
-//  console.log(cowMessage);
+import cowsay from 'cowsay';
+
+const cowMessage = cowsay.say({
+  text: "Hello, World!",
+  eyes: "^^", // Eyes
+  // Other options as needed
+  T: "  ",
+});
+
+console.log(cowMessage);
+
+
+console.log(cowMessage);
+
 
  
 // console.log(chalk.bgRed.white(cowsay.say({
